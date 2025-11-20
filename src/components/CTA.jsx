@@ -1,13 +1,19 @@
 export default function CTA() {
   return (
-    <section id="booking" className="py-16">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="rounded-3xl bg-black text-white p-10 md:p-12 flex flex-col md:flex-row items-center justify-between gap-6">
+    <section id="toupeer" className="py-20 bg-white">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid md:grid-cols-2 gap-10 items-center">
           <div>
-            <h3 className="font-serif text-3xl">Klar til forandring?</h3>
-            <p className="mt-2 text-white/80">Book din tid i dag – vi glæder os til at byde dig velkommen.</p>
+            <h2 className="font-serif text-4xl text-neutral-900">Toupéer & toppe</h2>
+            <p className="mt-4 text-neutral-600">Skræddersyede løsninger til fortyndet hår eller lokale områder med hårtab. Vores toupéer/toppe er lette, åndbare og tilpasses din hovedform, farve og struktur for et naturligt resultat.</p>
+            <p className="mt-3 text-neutral-600">Book en diskret, uforpligtende rådgivning – vi hjælper dig sikkert gennem valg, tilpasning og vedligehold.</p>
+            <div className="mt-6">
+              <a href="#kontakt" className="inline-flex justify-center rounded-full bg-black px-6 py-3 text-white font-medium hover:bg-neutral-800 transition">Book rådgivning</a>
+            </div>
           </div>
-          <a href="#kontakt" className="inline-flex justify-center rounded-full bg-white text-black px-6 py-3 font-medium hover:bg-neutral-100 transition">Kontakt os</a>
+          <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
+            <img src="https://www.fris%C3%B8r-pilo.dk/uploads/1/2/6/0/126007235/editor/12.jpg?1645172869" alt="Toupé og top" className="w-full h-full object-cover" />
+          </div>
         </div>
       </div>
     </section>

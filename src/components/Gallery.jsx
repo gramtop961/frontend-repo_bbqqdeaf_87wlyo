@@ -1,10 +1,10 @@
 const images = [
-  'https://images.unsplash.com/photo-1515688594390-b649af70d282?q=80&w=1200&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1200&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1200&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1519699047748-de8e457a634e?q=80&w=1200&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1510414696678-2415ad8474aa?q=80&w=1200&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1519414442781-fbd745c5b497?q=80&w=1200&auto=format&fit=crop'
+  'https://www.fris%C3%B8r-pilo.dk/uploads/1/2/6/0/126007235/14_orig.jpg',
+  'https://www.fris%C3%B8r-pilo.dk/uploads/1/2/6/0/126007235/editor/10.jpg?1645172942',
+  'https://www.fris%C3%B8r-pilo.dk/uploads/1/2/6/0/126007235/editor/6.jpg?1645172997',
+  'https://www.fris%C3%B8r-pilo.dk/uploads/1/2/6/0/126007235/editor/9.jpg?1645173063',
+  'https://www.fris%C3%B8r-pilo.dk/uploads/1/2/6/0/126007235/editor/8.jpg?1645173110',
+  'https://www.fris%C3%B8r-pilo.dk/uploads/1/2/6/0/126007235/published/11.jpg?1645173266'
 ]
 
 export default function Gallery() {

@@ -1,15 +1,15 @@
 import { useEffect, useState } from 'react'
-import { Menu, X, Scissors, Phone } from 'lucide-react'
+import { Menu, X, Phone } from 'lucide-react'
 
 const links = [
-  { href: '#forside', label: 'Forside' },
-  { href: '#priser', label: 'Priser' },
-  { href: '#behandlinger', label: 'Behandlinger' },
+  { href: '#hjem', label: 'Hjem' },
+  { href: '#extensions', label: 'Extensions' },
+  { href: '#parykker', label: 'Parykker' },
+  { href: '#toupeer', label: 'Toupéer' },
+  { href: '#hovedbeklaedning', label: 'Hovedbeklædning' },
+  { href: '#vipper-bryn', label: 'Vipper og bryn' },
   { href: '#galleri', label: 'Galleri' },
-  { href: '#team', label: 'Team' },
-  { href: '#booking', label: 'Booking' },
-  { href: '#omos', label: 'Om os' },
-  { href: '#kontakt', label: 'Kontakt' }
+  { href: '#kontakt', label: 'Kontakt os' }
 ]
 
 export default function Navbar() {
@@ -26,8 +26,8 @@ export default function Navbar() {
     <header className={`fixed top-0 inset-x-0 z-40 transition-all ${scrolled ? 'backdrop-blur-md bg-white/70 shadow-sm' : 'bg-transparent'}`}>
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          <a href="#forside" className="flex items-center gap-2">
-            <div className="p-2 rounded-full bg-black text-white"><Scissors className="w-5 h-5" /></div>
+          <a href="#hjem" className="flex items-center gap-3">
+            <div className="w-9 h-9 rounded-full bg-black text-white grid place-items-center text-sm font-semibold">FP</div>
             <span className="font-serif text-xl tracking-wide">Frisør Pilo</span>
           </a>
 
@@ -37,7 +37,7 @@ export default function Navbar() {
                 {l.label}
               </a>
             ))}
-            <a href="#booking" className="inline-flex items-center gap-2 rounded-full bg-black text-white px-4 py-2 text-sm font-medium hover:bg-neutral-800 transition-colors">
+            <a href="#kontakt" className="inline-flex items-center gap-2 rounded-full bg-black text-white px-4 py-2 text-sm font-medium hover:bg-neutral-800 transition-colors">
               <Phone className="w-4 h-4" /> Book tid
             </a>
           </div>
@@ -56,7 +56,7 @@ export default function Navbar() {
                 {l.label}
               </a>
             ))}
-            <a href="#booking" onClick={() => setOpen(false)} className="block px-2 py-2 rounded-md bg-black text-white text-center">Book tid</a>
+            <a href="#kontakt" onClick={() => setOpen(false)} className="block px-2 py-2 rounded-md bg-black text-white text-center">Book tid</a>
           </div>
         </div>
       )}

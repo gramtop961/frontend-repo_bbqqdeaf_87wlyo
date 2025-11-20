@@ -1,29 +1,29 @@
 const priceGroups = [
   {
-    title: 'Klip',
+    title: 'Parykker & toupéer',
     items: [
-      { name: 'Dameklip', price: 'fra 499,-' },
-      { name: 'Herreklip', price: 'fra 399,-' },
-      { name: 'Børneklip', price: 'fra 299,-' },
+      { name: 'Rådgivning og tilpasning', price: 'inkl. i køb' },
+      { name: 'Ægtehårs-paryk (fra)', price: 'Ring for pris' },
+      { name: 'Toupé / top (fra)', price: 'Ring for pris' },
     ]
   },
   {
-    title: 'Farve',
+    title: 'Extensions',
     items: [
-      { name: 'Reflekser', price: 'fra 699,-' },
-      { name: 'Helfarve', price: 'fra 799,-' },
-      { name: 'Balayage', price: 'fra 1199,-' },
+      { name: 'Forlængelse / fortætning', price: 'Ring for pris' },
+      { name: 'Vedligehold', price: 'Ring for pris' },
+      { name: 'Aftagning', price: 'Ring for pris' },
     ]
   }
 ]
 
 export default function Prices() {
   return (
-    <section id="priser" className="py-20 bg-neutral-50">
+    <section id="parykker" className="py-20 bg-neutral-50">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="font-serif text-4xl text-neutral-900">Priser</h2>
-          <p className="mt-3 text-neutral-600">Et udpluk – kontakt os for fuld prisliste</p>
+          <p className="mt-3 text-neutral-600">Kontakt os for et uforpligtende tilbud – priser varierer efter løsning</p>
         </div>
         <div className="grid md:grid-cols-2 gap-6">
           {priceGroups.map((g) => (
